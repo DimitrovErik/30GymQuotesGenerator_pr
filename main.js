@@ -69,36 +69,54 @@ const message = [
 
 // Conditions (Second part of each quote)
 const condition = [
-    "our doubts of today", 
-    "an indomitable will", 
-    "what the mind believes", 
-    "perfect", 
-    "it", 
-    "know", 
-    "perseverance", 
-    "fall", 
-    "get", 
-    "struggle", 
-    "achieve it", 
-    "strengths", 
-    "right", 
-    "do", 
-    "take", 
-    "going", 
-    "heart", 
-    "gift", 
-    "grow", 
-    "failure", 
-    "training", 
-    "can’t", 
-    "do them", 
-    "count", 
-    "started", 
-    "goal", 
-    "done", 
-    "go", 
-    "victory", 
-    "limits"
-  ];
+  "our doubts of today",
+  "an indomitable will",
+  "what the mind believes",
+  "perfect",
+  "it",
+  "know",
+  "perseverance",
+  "fall",
+  "get",
+  "struggle",
+  "achieve it",
+  "strengths",
+  "right",
+  "do",
+  "take",
+  "going",
+  "heart",
+  "gift",
+  "grow",
+  "failure",
+  "training",
+  "can’t",
+  "do them",
+  "count",
+  "started",
+  "goal",
+  "done",
+  "go",
+  "victory",
+  "limits",
+];
 
-  
+//Random index function
+const randomIndex = () => {
+  return Math.floor(Math.random() * 29);
+};
+
+// Faster way to enter the random index function
+const random = randomIndex();
+
+console.log(random);
+
+// Random Quote Generator function
+const quoteGenerator = () => {
+  // Accessing (with random index) and Concatenating the quote structure
+  const quote = `${message[random]} ${condition[random]} - ${author[random]}`;
+
+  console.log(quote);
+};
+
+quoteGenerator();

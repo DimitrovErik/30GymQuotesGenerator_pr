@@ -1,4 +1,4 @@
-# 100 Motivational Gym Quotes Generator & Mixed Messages
+# 30 Motivational Gym Quotes Generator & Mixed Messages
 
 A Codecademy Portfolio Project  
 
